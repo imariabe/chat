@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatHive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/chat.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/chat.png" alt="Logo">
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="icon-home"></i> Home</a></li>
+                <li><a href="#"><i class="icon-message"></i> Message</a></li>
+                <li><a href="#"><i class="icon-settings"></i> Settings</a></li>
+                <li><a href="#"><i class="icon-profile"></i> Profile</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Nav -->
+            <header class="top-nav">
+                <div class="profile">
+                    <img src="images/bepeimg.png" alt="User Avatar" class="avatar" >
+                    <div class="dropdown">
+                        <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle" class="dropdown-toggle">
+                            <i class="icon-menu" ></i>
+                        </label>
+                        <div class="dropdown-menu">
+                            <a href="#">Profile</a>
+                            <a href="#">Global Settings</a>
+                             <hr style="background-color: grey; width: 270px;">
+                            <a href="#">Privacy</a>
+                            <a href="#">Logout</a>
+                            <div class="team-section">
+                                <p style="font-size: 20px;">Team Members</p>
+                                <div class="team-member">
+                                    <img src="images/bepeimg.png" alt="Member Avatar">
+                                    <p>John Doe<br><small>john.doe@example.com</small></p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="images/bepeimg.png" alt="Member Avatar">
+                                    <p>John Doe<br><small>john.doe@example.com</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Area -->
+            <section class="content-area">
+                <!-- Content will go here -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

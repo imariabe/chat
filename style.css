@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #00FFFF;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.sidebar-logo img {
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu i {
+  margin-right: 10px;
+}
+
+.icon-home:before {
+  content: '\1F3E0'; /* Unicode for home icon */
+}
+
+.icon-message:before {
+  content: '\1F4AC'; /* Unicode for message icon */
+}
+
+.icon-settings:before {
+  content: '\2699'; /* Unicode for settings icon */
+}
+
+.icon-profile:before {
+  content: '\1F464'; /* Unicode for profile icon */
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  background-color: #00FFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.icon-menu:before {
+  content: '\2630'; /* Unicode for hamburger menu icon */
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #444;
+  width:300px;
+  height: 450px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+#menu-toggle:checked + .dropdown-toggle + .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.dropdown-menu .team-section {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+.dropdown-menu .team-member {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.dropdown-menu .team-member img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
